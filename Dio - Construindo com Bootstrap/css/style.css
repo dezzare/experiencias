@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'pet_memedium';
+  src: url('../font/petme-webfont.woff2') format('woff2'),
+    url('../font/petme-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+* {
+  font-family: 'pet_memedium';
+
+}
+
+.navbar {
+  background-color: black;
+
+}
+
+.padding-logo {
+  padding-left: 4rem;
+  padding-right: 4rem;
+
+}
+
+.padding-nav {
+  padding-left: 2rem;
+}
+
+.about {
+  background-color: #282A36;
+  color: #FFFFFF
+}
+
+.padding-top {
+  padding-top: 50px;
+}
+
+.img-crop {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+
+}
+
+.img-radius {
+  height: 150%;
+  width: auto;
+
+}
