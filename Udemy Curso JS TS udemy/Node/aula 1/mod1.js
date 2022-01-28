@@ -32,4 +32,10 @@ class Pessoa {
     this.nome = nome;
   }
 }
-exports.Pessoa = Pessoa;
+
+const nome = 'Pedro';
+const sobrenome = 'Bittencourt';
+
+// module.exports = { nome, sobrenome, Pessoa };
+exports.nome = nome;
+module.export.sobrenome = sobrenome;
