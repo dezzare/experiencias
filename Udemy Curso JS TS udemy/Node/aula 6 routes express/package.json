@@ -24,11 +24,14 @@
     "webpack-cli": ""
   },
   "dependencies": {
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.6.0",
     "core-js": "",
     "css-loader": "",
     "dotenv": "^15.0.0",
     "ejs": "",
     "express": "",
+    "express-session": "^1.17.2",
     "mongoose": "^6.1.8",
     "regenerator-runtime": "",
     "style-loader": ""
