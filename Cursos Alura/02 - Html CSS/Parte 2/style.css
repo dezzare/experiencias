@@ -1,0 +1,153 @@
+/*comentário no css*/
+header {
+  background: #BBBBBB;
+  padding: 20px 0px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.caixa-menu {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0px;
+
+}
+
+nav li {
+  margin-right: 15px;
+  display: inline;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #C78C19;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+.banner {
+  width: 100%;
+}
+
+.principal {
+  background: #FEFEFE;
+  padding: 3em 0;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.principal p {
+  margin: 0 0 1em;
+}
+
+.principal strong {
+  font-weight: bold;
+}
+
+.principal em {
+  font-style: italic;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+
+}
+
+.utensilios {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+p {
+  text-align: center;
+}
+
+#missao {
+  font-size: 20px
+}
+
+em strong {
+  color: #FF0000;
+}
+
+.itens {
+  font-style: italic
+}
+
+.mapa {
+  padding: 3em 0;
+  background: linear-gradient(#FEFEFE, #888888);
+
+}
+
+.mapa p {
+  margin: 0 0 2em;
+  text-align: center;
+  width: 940px;
+}
+
+.beneficios {
+  background: #888888;
+  padding: 3em 0;
+}
+
+.conteudo-beneficios {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.lista-beneficios {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+
+.itens {
+  line-height: 1.5;
+  font-style: normal;
+}
+
+.itens:first-child {
+  font-weight: bold;
+}
+
+.itens:nth-child(4) {
+  font-style: italic;
+}
+
+.imagembeneficios {
+  width: 60%;
+}
+
+footer {
+  text-align: center;
+  background: url("imagens/bg.jpg");
+  padding: 40px;
+}
+
+.copyright {
+  color: white;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width) {}

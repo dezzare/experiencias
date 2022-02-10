@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu primeiro Teste</title>
+</head>
+<body>
+    <main>
+        <h1>Meu primeiro teste de html</h1>
+        <p>Tste</p>
+        <br>
+        <p>Teste 2</p>
+
+        <script> 
+            document.write("String dentro JS") 
+            var media = (10 + 21)/3;
+            document.write("<br>A média é: " + Math.round(media));
+            
+            function calculaImc(peso, altura){
+                var resultadoImc = peso / (altura * altura);
+                mostra(resultadoImc);
+            }
+            
+            function mostra(imc){
+                document.write("<br>" + nome + " o seu IMC é: " + imc);
+            }
+            var nome = prompt("Informe o seu nome:");
+            var pesoInformado = prompt(nome + ", informe o seu peso");
+            var alturaInformada = prompt(nome + ",informe a sua altura");
+            
+            calculaImc(pesoInformado, alturaInformada);
+            
+            </script>
+    </main>
+</body>
+
+</html>
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <header>
+        <meta charset="UTF-8">
+
+    </header> 
+    <head>
+        <title>canvas</title>
+    </head>
+    <body>
+        <canvas width="600" height="400"></canvas>
+
+    </body>
+
+    <script>
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+        var xQuadrado = 50;
+        var yQuadrado = 50;
+        var nQuadrados = 5;
+
+        function quadradoVerde(x, y){
+            pincel.fillStyle = 'green';
+            pincel.fillRect(x, y, xQuadrado, yQuadrado);
+            pincel.fillStroke = 'black';
+            pincel.strokeRect(x, y, xQuadrado, yQuadrado);
+        }
+
+        for(i = 1; i <= nQuadrados; i++){
+            var yy = i * xQuadrado;
+            var xx = 0
+            quadradoVerde(xx, yy);
+        }
+
+
+    </script>
+
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<header>
+<meta charset="UTF-8">
+</header>
+<head>
+    <title>Média Idades</title>
+</head>
+
+<body>
+    <script>
+
+        function pulaLinha(){
+            document.write("<br><br>");
+        }
+
+        function mostra(frase){
+            document.write(frase)
+            pulaLinha();
+        }
+
+       var totalFamiliares = parseInt(prompt("Quantas pessoas na sua casa?"));
+
+       var totalIdades = 0;
+
+       for(var i = 1; i <= totalFamiliares; i++){
+           var idade = parseInt(prompt("Informe idade do familiar"));
+           totalIdades = totalIdades + idade;
+                      
+       }
+       mostra(totalIdades/totalFamiliares);
+       mostra("FIM");
+
+
+    </script>
+</body>
+
+</html>
