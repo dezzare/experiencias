@@ -7,7 +7,6 @@ let score = 0;
 //2 = amarelo
 //3 = azul
 
-const genius = document.querySelector('.genius');
 const green = document.querySelector('.green');
 const red = document.querySelector('.red');
 const yellow = document.querySelector('.yellow');
