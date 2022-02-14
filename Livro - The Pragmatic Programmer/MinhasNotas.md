@@ -213,4 +213,28 @@ observe o caminho que já está iluminado, não olhe p escuro
 "Who would win the desktop GUI wars, Motif or OpenLook?"
 
 
+**TDA - Tell, Don't Ask**
+não tomar decisões baseado no estado interno do obj para, então, modificá-lo. (destroi os benefícios do encapsulamento).
+arrume antes
 
+Menciona novamente a **"Lei de Demeter" LoD**:
+Métodos definidos em uma Classe somente devem "chamar":
+  other instance methods
+  its parameters
+  methos in objects that it creates, both on the stack an in the heap
+  global variables
+
+
+**Don't Chain Method Calls**
+
+**Avoid Global Data**
+singleton object/global module === global data
+**If it's Important Enought to Be Global, Wrap it in an API**
+
+
+Fazer aplicações para responder a eventos cotidianos e ajustar a resposta em conformidade com eles.
+Estratégias:
+  **Finite State Machines
+  The Observer Pattern
+  Publish/Subscribe
+  Reactive Programming an Streams**
