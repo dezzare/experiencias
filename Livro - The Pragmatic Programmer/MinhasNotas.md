@@ -238,3 +238,10 @@ Estratégias:
   The Observer Pattern
   Publish/Subscribe
   Reactive Programming an Streams**
+
+
+**Programming Is About Code, But Programs Are About Data**
+Pense o código como uma corrente de transformações.
+  (programação funcional)
+
+
