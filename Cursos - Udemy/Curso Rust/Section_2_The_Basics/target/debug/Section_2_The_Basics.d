@@ -1,0 +1,1 @@
+/home/pedro/Documentos/Dev/Projetos\ no\ Github/experiencias/Cursos\ -\ Udemy/Curso\ Rust/Section_2_The_Basics/target/debug/Section_2_The_Basics: /home/pedro/Documentos/Dev/Projetos\ no\ Github/experiencias/Cursos\ -\ Udemy/Curso\ Rust/Section_2_The_Basics/src/main.rs
