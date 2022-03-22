@@ -34,25 +34,28 @@ fn main(){
         ..user2
     };
 
-}
 
 
-fn build_user(email: String, username: String) -> User {
-    User {
-        email, //pode ser omitido "email: " por ter a mesma sintaxe
-        username,
-        active: true,
-        sign_in_count: 1,
+
+    fn build_user(email: String, username: String) -> User {
+        User {
+            email, //pode ser omitido "email: " por ter a mesma sintaxe
+            username,
+            active: true,
+            sign_in_count: 1,
+        }
     }
-}
 
 
-// Tuple Struc
+    // Tuple Struc
 
-struct Color(i32, i32, i32);
+    struct Color(i32, i32, i32);
 struct Point(i32, i32, i32);
 
 fn tuple_struct() {
     let black = Color(0, 0, 0);
     let origin = Point(0, 0, 0);
+
+
+}
 }
