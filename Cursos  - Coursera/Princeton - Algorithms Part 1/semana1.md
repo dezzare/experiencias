@@ -37,3 +37,85 @@ numeros relacionados =  0  1  2  3  4  5  6  7  8  9
   find = N (pior caso)
   trees podem ficar muito grande
   acaba custando caro, tendência de ter mesma perf de quick-find
+
+
+## weighted quick-union
+**DATA STRUCTURE**
+  mesma que quick union, mas mantem um array extra para contar o número de objetos/andares contidos na raiz
+
+**Find** : igual quick union | return root(p) == root(q);
+
+**Union** : modifica a quick  union para:
+  Link raizes com tamanhos/alturas menores em uma raiz maior
+  atualiza o array extra = sz[]
+  Modelo:
+    let (i, j) = root(p), root(q)
+    if  i == j return
+    if sz[i] sz[j] { id[i] = j; sz[j] += sz[i];}
+      else         { id[j] = i; sz[i] += sz[j];}
+
+**COST MODEL**
+  find = N = tempo proporcional ao deph de p e q.
+  union = log N = tempo constante a raizes.
+  ainda pode ser melhorado
+
+
+## quick-union with path compression
+**DATA STRUCTURE**
+  após computar a raiz de 'p', seta ID de cada 'node' examinado até o ponto da raiz.
+  na prática deixa a 'árvore' praticamente flat
+  
+  two-pass implementation
+    adiciona um segundo loop a root() 
+    para setar o id[] de cada 'node'até a raiz.
+  simpler one-pass variant
+    make every other noed in path point to its grandparent
+      while i != id[i] {
+        id[i] = id[id[i]];
+        i = id[i];
+      } return i;
+
+**COST MODEL**
+  read = constante
+  em teoria não é linear, porém na prática é.
+  N + M log N
+
+
+Comparação de custos nos piores casos
+  M N             quick-find
+  M N             quick-union
+  N + M log N     weighted quick-union
+  N + M log N     quick-union + path compression
+  N + M lg*N      weighted quick-union + path compression
+
+
+Ex: 10^9 unions and finds with 10^9 objects
+  weighted quick-union + path compression reduz de 30 ANOS para 6 SEGUNDOS.
+
+
+## Aplicações
+  **Percolation**
+  **Dynamic Connectivity**
+  Games (Go, Hex)
+  Least common ancestor
+  Equivalence of finite state automata
+  Hoshen-Kopelman algorithm in physics
+  Hinley-Milner polymorphic typee inference
+  Kruskal's minimum spanning tree algorithm
+  Compiling equivalence statements in Fortran
+  Morphological attribute openings and closings
+  Matlab's bwlabel() function un image processing
+
+### Percolation
+A model for many physical systems:
+  N-by-N grid of sites
+  Each site is open with probabiliity 'p' (or blocked with prob 1 - p)
+"irá comunicar ou não"
+  p > p* = quase certo que percolates
+  p < p* = quase certop que não percolates
+  qual é o valor de p*? algo próximo ed 0.593 (0.6)
+    Monte Carlo simulation
+
+  
+
+
