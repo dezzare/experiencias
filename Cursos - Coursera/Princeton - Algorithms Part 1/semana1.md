@@ -117,5 +117,24 @@ A model for many physical systems:
     Monte Carlo simulation
 
   
+# Analysis of Algorithms
+## Alguns algorítimos de suceso:
+  FFT algorithm = break down waveform of N samples into periodic components.
+    discrete Fourier transform
+    aplicação em imagens (DVD, jpeg etc)
+    N log N steps
+  Barnes-Hut algorithm
+    n-body simulation
+    simulação iteração gravitacional em N bodies
+    N log N steps
 
+## Scientific method
+  Observe
+  Hypothesize
+  Predict
+  Verify
+  Validate
 
+  Princípios:
+    Experiments must be **reproducible**
+    Hypotheses must be **falsiable**
