@@ -138,3 +138,9 @@ A model for many physical systems:
   Princípios:
     Experiments must be **reproducible**
     Hypotheses must be **falsiable**
+
+
+# Binary search
+  Publicado pela primeira vez em 1946;
+  First bug-free in 1962
+  Pesquisa em arrays já ordenados.
