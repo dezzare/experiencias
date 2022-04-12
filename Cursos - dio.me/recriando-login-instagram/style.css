@@ -1,0 +1,98 @@
+/* fundo FAFAFA */
+/* botao entrar = #B2DFFC */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: #FAFAFA;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.insta-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%
+}
+.container-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  margin-left: 50px;
+  margin-top: 0;
+
+}
+.container-login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  justify-content: space-around;
+  border: 1px solid grey;
+  height: 40vh;
+  width: 100%;
+  }
+
+.logo {
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+}
+
+.campo-login {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-login {
+  justify-items: space-around;
+  /* border: 1px solid red; */
+}
+
+.outra-conta {
+  margin-top: 10px;
+  background: white;
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid grey;
+}
+
+.apps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.app-img{
+  display: flex;
+  flex-direction: row;
+}
+
+.app-img img {
+  height: 3rem;
+}
