@@ -25,16 +25,23 @@ body {
 }
 
 .insta-phone {
-  display: flex;
+  /* border: 1px solid red; */
   align-items: center;
   justify-content: center;
-  width: 50%
+  margin: 0 auto;
+  width: 50%;
 }
+ 
+.insta-phone img {
+  height: 60vh;
+}  
+  
 .container-column {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 50%;
+  height: 60%;
   margin-left: 50px;
   margin-top: 0;
 
@@ -45,38 +52,102 @@ body {
   flex-direction: column;
   background: white;
   justify-content: space-around;
-  border: 1px solid grey;
+  border: 1px solid #CACACA;
   height: 40vh;
   width: 100%;
+  border-radius: 0.3rem;
   }
+
 
 .logo {
   /* border: 1px solid blue; */
   display: flex;
   align-items: center;
+  margin: 15px 0;
 }
 
 .campo-login {
+  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 80%;
+}
+
+.input-login {
+  font-size: 10pt;
+  padding: 10px;
+  border: 1px solid #CACACA;
+  border-radius: 0.2rem;
+  background: #FAFAFA;
+}
+
+.input-password {
+  margin-top: 5px;
+  font-size: 10pt;
+  padding: 10px;
+  background: #FAFAFA;
+  border: 1px solid #CACACA;
+  border-radius: 0.2rem;
+}
+
+button {
+  padding: 5px 0;
+  border-radius: 0.2rem;
+  background: #B2DFFC;
+  outline: 0;
+  border: transparent;
+  color: white;
+  font-weight: bold;
+}
+
+.footer-div{
+  /* border: 1px solid red; */
+  display: flex;
+  width: 100%
+}
+
+.div-campos {
+  display: flex;
+  margin: 10px 40px 18px;
+  width: 100%;
+}
+
+.div-hr {
+  background-color: #CACACA;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 1px;
+  position: relative;
+  top: 0.45rem;
+}
+
+.div-ou {
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 13px;
+  margin: 0 18px;
+  text-transform: uppercase;
+
 }
 
 .footer-login {
-  justify-items: space-around;
-  /* border: 1px solid red; */
+  text-align: center;
+  margin: 0;
+  padding: 0;;
 }
 
 .outra-conta {
   margin-top: 10px;
   background: white;
-  height: 5vh;
+  height: 7vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid grey;
+  border: 1px solid #CACACA;
+  border-radius: 0.3rem;
 }
 
 .apps {
@@ -85,7 +156,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .app-img{
