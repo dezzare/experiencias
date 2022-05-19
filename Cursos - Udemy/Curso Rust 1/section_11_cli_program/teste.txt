@@ -1,0 +1,2 @@
+Esse é um arquivo de sucesso
+sucesso de replace
